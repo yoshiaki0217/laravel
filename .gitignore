@@ -1,3 +1,8 @@
 .env
 .idea
 docker/db
+vendor/
+package-lock.json
+node_modules/
+composer.lock
+src/composer.lock
