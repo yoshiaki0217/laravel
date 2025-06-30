@@ -17,7 +17,7 @@ services:
     depends_on:
       - app
   db:
-    image: mysql:8.0.36
+    image: mysql:8.0
     container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: password
