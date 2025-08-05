@@ -4,8 +4,12 @@ up: ## Run Server
 down:
 	docker compose down
 
-login: ## Run Server
+login:
 	docker compose exec app bash
+
+app-clear:
+	docker compose exec app composer dump-autoload
+	docker compose exec app php artisan optimize:clear
 
 init:
 	docker compose exec app ash -c ' \
